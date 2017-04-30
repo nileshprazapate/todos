@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+  <div align= "center">
+<h1>Todos</h1><br><br>
+
+
+
+
+
+  <div align= "center">
+   <form>
+   <label for="title">Title</label><br>
+    <input type="text" id="title" name="title" value="  "> <br><br>
+   <label for="Description">Description</label><br>
+      <textarea rows = '5' cols = '15' ></textarea>
+</form> <br>
+<p><b>Day</b></p>
+
+<form>
+  <select id="Day" name="Day">
+    <option value="Su">Sunday</option>
+    <option value="Mo">Monday</option>
+    <option value="Tu">Tuesday</option>
+    <option value="dhoti">India</option>
+    <option value="ru">Russia</option>
+    <option value="ch">China</option>
+    <option value="jp">japan</option>
+    <option value="bhag">bangladesh</option>
+    <option value="usa">USA</option>
+  </select>
+</form>
+<br>
+<br>
+<button type="save" name = "save"> Save</button>
+<button type="cancel" name = "cancel"> Cancel</button>
+
+
+            {% endblock %}
+
